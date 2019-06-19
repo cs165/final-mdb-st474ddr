@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>CS193x Final Project</title>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <script src="/js/script.js" defer></script>
-    </script>
-  </head>
-  <body>
-    <!-- TODO(you): Add the HTML necessary to complete your final project. -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>CS193x Final Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- <script defer src="./js/testScripts.js"></script> -->
+
+  <!-- <script defer src="/js/fakeData.js"></script> -->
+  <script defer src="./js/prompts.js"></script>
+  <script defer src="./js/viewMode.js"></script>
+  <script defer src="./js/editMode.js"></script>
+  <script defer src="./js/diaryscreen.js"></script>
+  <script defer src="./js/homescreen.js"></script>
+  <script defer src="./js/app.js"></script>
+  <script src="./js/script.js" defer></script>
+
+</head>
+
+<body>
+  <!-- TODO(you): Add the HTML necessary to complete your final project. -->
+  <div id="home" class="inactive">
+    <h1 class="heading" id="home-heading">Create a daily journal</h1>
+    <p class="subtitle margin-below">Note: Your journal will be viewable and editable to anyone who has the link</p>
+    <div id="create-journal-btn-container">
+      <h3 id="create-journal-btn" class="subtitle">Create a new journal </h3>
+    </div>
+  </div>
+  <div id="diary" class="inactive">
+    <div class="diary-content">
+      <header id="journal-header">
+        <h1 id="date" class="heading"></h1>
+        <p id="entry-num"></p>
+        <p id="prompt" class="subtitle margin-below"></p>
+
+      </header>
+      <section id="journal-area" class="margin-below">
+        <div id="viewer" class="viewer">stuff</div>
+        <textarea id="editor" class="editor" name="entry" rows="8" cols="80"></textarea>
+      </section>
+    </div>
+    <footer id="journal-footer">
+      <input type="image" id="prev" src="./images/back.png">
+      <input class="inactive" type="image" id="save" src="./images/checked.png">
+      <div id="home-btn" class="subtitle">Home</div>
+      <input type="image" id="next" src="./images/forward.png">
+    </footer>
+  </div>
+</body>
+
 </html>
