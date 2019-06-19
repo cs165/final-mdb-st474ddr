@@ -1,3 +1,114 @@
 /**
  * TODO(you): Add the CSS necessary to complete your final project.
  **/
+html {
+  box-sizing: border-box;
+  background: #fdf5f5;
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.heading {
+  font-family: "Merriweather",serif;
+  font-size: 30pt;
+  text-align: center; }
+
+.subtitle {
+  font-family: "Montserrat", serif;
+  font-size: 12pt;
+  text-align: center; }
+
+#journal-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather",serif;
+  font-size: 14pt;
+  line-height: 1.5em; }
+
+#create-journal-btn,
+#prompt {
+  text-transform: uppercase; }
+
+#create-journal-btn {
+  background: white; }
+
+.margin-below {
+  margin-bottom: 5rem; }
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+.inactive {
+  display: none !important; }
+
+#create-journal-btn-container,
+#journal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#journal-footer {
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  background: white;
+  padding: 10px; }
+
+#create-journal-btn {
+  display: inline;
+  border: 2px black solid;
+  text-align: center;
+  padding: 20px 50px; }
+  #create-journal-btn:hover {
+    cursor: pointer; }
+
+#home-btn:hover {
+  cursor: pointer; }
+
+#journal-area {
+  white-space: pre-wrap; }
+
+#editor {
+  background: rgba(255, 255, 255, 0.5);
+  font-family: "Merriweather",serif;
+  font-size: 14pt; }
+
+#viewer {
+  transition: background-color 0.6s; }
+  #viewer:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5); }
+
+#diary {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  #diary .diary-content {
+    flex: 1 0 auto; }
+  #diary #journal-footer {
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background: white;
+    padding: 10px;
+    height: 70px; }
+
+#editor,
+#viewer {
+  width: 80%;
+  height: 200px; }
+
+#entry-num {
+  font-size: 8pt;
+  text-align: center;
+  margin: 10px 0;
+  font-family: "Merriweather",serif; }
+
+/*# sourceMappingURL=style.css.map */
